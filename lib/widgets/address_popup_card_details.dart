@@ -80,7 +80,7 @@ class _AddressPopupCardDetailsState extends State<AddressPopupCardDetails> {
                 ),
               ),
               SizedBox(
-                height: 60,
+                height: MediaQuery.of(context).size.height * 0.06,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -88,7 +88,9 @@ class _AddressPopupCardDetailsState extends State<AddressPopupCardDetails> {
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.35,
                     child: MaterialButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.pop(context);
+                      },
                       elevation: 0,
                       child: Text(
                         "Cancel",
