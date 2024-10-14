@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
+import 'package:the_laundry_app/Screens/home_screen.dart';
 
 import '../consts.dart';
 import '../services/alert_service.dart';
@@ -146,7 +147,7 @@ class _LoginScreenState extends State<LoginScreen>{
             print(result);
 
             if(result){
-              _navigationService.pushReplacementNamed("/home");
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) => HomeScreen()));
               _alertService.showToast(
                   text: "Successfully logged in!",
                   icon: Icons.done,

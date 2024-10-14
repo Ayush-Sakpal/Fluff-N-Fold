@@ -38,7 +38,7 @@ class _PremiumWashScreenState extends State<PremiumWashScreen> {
         context: context,
         builder: (context){
           return AlertDialog(
-            title: const Text("'Unable to Proceed"),
+            title: const Text("Unable to Proceed"),
             content: const Text("Nothing in Cart!"),
             actions: [
               TextButton(
@@ -64,6 +64,12 @@ class _PremiumWashScreenState extends State<PremiumWashScreen> {
         ),
         centerTitle: true,
         actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.of(context).pushNamedAndRemoveUntil('/home', (route) => false);
+            },
+            icon: const Icon(Icons.home_rounded),
+          ),
           IconButton(
               onPressed: (){
                 _navigationService.pushNamed("/cart");

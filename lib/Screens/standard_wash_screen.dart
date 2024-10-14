@@ -36,7 +36,7 @@ class _StandardwashscreenState extends State<Standardwashscreen> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            title: const Text("'Unable to Proceed"),
+            title: const Text("Unable to Proceed"),
             content: const Text("Nothing in Cart!"),
             actions: [
               TextButton(
@@ -61,7 +61,7 @@ class _StandardwashscreenState extends State<Standardwashscreen> {
           actions: [
             IconButton(
               onPressed: () {
-                _navigationService.goBack();
+                Navigator.of(context).pushNamedAndRemoveUntil('/home', (route) => false);
               },
               icon: const Icon(Icons.home_rounded),
             ),

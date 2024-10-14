@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
+import 'package:the_laundry_app/services/database_service.dart';
 import 'package:the_laundry_app/widgets/sliding_dashBoard.dart';
 import '../models/user_profile.dart';
 import '../services/alert_service.dart';
@@ -17,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   late NavigationService _navigationService;
   late AuthService _authService;
   late AlertService _alertService;
+  late DatabaseService _databaseService;
 
   String userId = '';
   String? userName;
@@ -29,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
     _navigationService = _getIt.get<NavigationService>();
     _authService = _getIt.get<AuthService>();
     _alertService = _getIt.get<AlertService>();
+    _databaseService = _getIt.get<DatabaseService>();
 
     userId = _authService.user!.uid;
     userName = _authService.user!.displayName;

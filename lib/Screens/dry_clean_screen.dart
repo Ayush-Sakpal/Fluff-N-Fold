@@ -67,6 +67,12 @@ class _DryCleanScreenState extends State<DryCleanScreen> {
         centerTitle: true,
         actions: [
           IconButton(
+            onPressed: () {
+              Navigator.of(context).pushNamedAndRemoveUntil('/home', (route) => false);
+            },
+            icon: const Icon(Icons.home_rounded),
+          ),
+          IconButton(
               onPressed: (){
                 _navigationService.pushNamed("/cart");
               },

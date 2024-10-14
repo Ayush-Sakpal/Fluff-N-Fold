@@ -206,6 +206,7 @@ class _SignupScreenState extends State<SignupScreen>{
                           uid: _authService.user!.uid,
                           name: name,
                           pfpURL: pfpURL
+
                       )
                   );
                   setState(() {

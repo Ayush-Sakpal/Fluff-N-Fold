@@ -62,6 +62,14 @@ class _CartScreenState extends State<CartScreen> {
           title: Text(
             'Cart',
           ),
+          actions: [
+            IconButton(
+              onPressed: () {
+                Navigator.of(context).pushNamedAndRemoveUntil('/home', (route) => false);
+              },
+              icon: const Icon(Icons.home_rounded),
+            ),
+          ],
           centerTitle: true,
 
           bottom: TabBar(
@@ -101,7 +109,11 @@ class _CartScreenState extends State<CartScreen> {
                   builder: (context, listProviderModel, child) => SafeArea(
                       child: Padding(
                         padding: const EdgeInsets.all(27),
-                        child: Column(
+                        child: listProviderModel.itemNames.length == 0
+                            ?Center(
+                          child: Text("Nothing added for Standard Wash!"),
+                        )
+                        :Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Expanded(
@@ -281,7 +293,11 @@ class _CartScreenState extends State<CartScreen> {
                   builder: (context, listProviderModel, child) => SafeArea(
                       child: Padding(
                         padding: const EdgeInsets.all(27),
-                        child: Column(
+                        child: listProviderModel.itemNames.length == 0
+                            ?Center(
+                          child: Text("Nothing added for Premium Wash!"),
+                        )
+                            :Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Expanded(
@@ -461,7 +477,11 @@ class _CartScreenState extends State<CartScreen> {
                   builder: (context, listProviderModel, child) => SafeArea(
                       child: Padding(
                         padding: const EdgeInsets.all(27),
-                        child: Column(
+                        child: listProviderModel.itemNames.length == 0
+                            ?Center(
+                          child: Text("Nothing added for Dry Clean!"),
+                        )
+                            :Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Expanded(
@@ -641,7 +661,11 @@ class _CartScreenState extends State<CartScreen> {
                   builder: (context, listProviderModel, child) => SafeArea(
                       child: Padding(
                         padding: const EdgeInsets.all(27),
-                        child: Column(
+                        child: listProviderModel.itemNames.length == 0
+                            ?Center(
+                          child: Text("Nothing added for Ironing!"),
+                        )
+                            :Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Expanded(

@@ -24,7 +24,10 @@ class DatabaseService{
 
   void _setupCollectionReferences(){
     _userCollection = _firebaseFirestore.collection('users').withConverter<UserProfile>(
-        fromFirestore: (snapshot, _) => UserProfile.fromJson(snapshot.data()!),
+        fromFirestore: (snapshot, _) {
+          print(snapshot);
+          return UserProfile.fromJson(snapshot.data()!);
+          },
         toFirestore: (userProfile, _) => userProfile.toJson()
     );
 
@@ -36,6 +39,7 @@ class DatabaseService{
 
   Future<void> createUserProfile({required UserProfile userProfile}) async{
     await _userCollection?.doc(userProfile.uid).set(userProfile);
+    print(userProfile.uid);
   }
 
   Stream<QuerySnapshot<UserProfile>> getUserProfiles(){

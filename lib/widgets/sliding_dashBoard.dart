@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
+import 'package:the_laundry_app/Screens/login_screen.dart';
 
 import '../services/alert_service.dart';
 import '../services/auth_service.dart';
@@ -47,7 +48,7 @@ class _SlidingDashBoardState extends State<SlidingDashBoard> {
                     bool result = await _authService.logout();
 
                     if (result) {
-                      _navigationService.pushReplacementNamed("/login");
+                      Navigator.of(context).pushNamedAndRemoveUntil('/login', (route) => false);
                       _alertService.showToast(
                           text: "Successfully logged out!",
                           icon: Icons.done,
