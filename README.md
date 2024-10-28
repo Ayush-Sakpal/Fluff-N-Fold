@@ -55,6 +55,17 @@ Welcome to **Fluff N Fold**! A convenient, user-friendly laundry app that allows
 
 ## 📸 Screenshots
 
+![Screenshot_2024-10-28-11-19-59-14_6caf2497fa49ebd81d6f5252449e8b7f](https://github.com/user-attachments/assets/162b28e3-768f-4331-a8f0-da78e03f8847)
+![Screenshot_2024-10-28-11-20-08-85_6caf2497fa49ebd81d6f5252449e8b7f](https://github.com/user-attachments/assets/95c2be1c-ca99-4903-b70c-ea1298a1983e)
+![Screenshot_2024-10-28-11-21-27-94_6caf2497fa49ebd81d6f5252449e8b7f](https://github.com/user-attachments/assets/f7503f6f-0101-4f03-9902-22dc8892a6d1)
+![Screenshot_2024-10-28-11-21-48-62_6caf2497fa49ebd81d6f5252449e8b7f](https://github.com/user-attachments/assets/6523f455-6687-4293-b292-4c2a21d75f58)
+![Screenshot_2024-10-28-11-21-44-98_6caf2497fa49ebd81d6f5252449e8b7f](https://github.com/user-attachments/assets/46baf688-c8a2-4955-9f9c-2ded780b6e5b)
+![Screenshot_2024-10-28-11-22-01-64_6caf2497fa49ebd81d6f5252449e8b7f](https://github.com/user-attachments/assets/d10387aa-e517-4de6-b688-e1bb2f494729)
+![Screenshot_2024-10-28-11-22-22-03_6caf2497fa49ebd81d6f5252449e8b7f](https://github.com/user-attachments/assets/84cf8067-19cf-4a0f-ac44-2520a375f6ac)
+![Screenshot_2024-10-28-11-22-08-17_6caf2497fa49ebd81d6f5252449e8b7f](https://github.com/user-attachments/assets/2ce7b631-637f-46a2-ade0-b1638d4f1461)
+![Screenshot_2024-10-28-11-22-42-50_6caf2497fa49ebd81d6f5252449e8b7f](https://github.com/user-attachments/assets/5d3b0635-0c13-49d5-a36f-ea31e85c3b63)
+![Screenshot_2024-10-28-11-22-46-24_6caf2497fa49ebd81d6f5252449e8b7f](https://github.com/user-attachments/assets/3e1c1903-2f87-4fa9-9c15-c941c2e82a42)
+![Screenshot_2024-10-28-11-22-52-06_6caf2497fa49ebd81d6f5252449e8b7f](https://github.com/user-attachments/assets/9808daf0-e823-42ed-8ab3-8cca12485cb0)
 
 ---
 
